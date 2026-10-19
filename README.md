@@ -111,7 +111,7 @@ Whatever the kind, the tool's official docs win over the skill when the two disa
 | [`blockscout`](skills/blockscout) | An open-source explorer and APIs to verify contracts and show transactions | Dev infra & RPC | Generated |  |
 | [`hardhat`](skills/hardhat) | The development environment for compiling, testing and deploying contracts | Dev infra & RPC | Generated |  |
 | [`openzeppelin`](skills/openzeppelin) | Audited contract libraries to build your token, access control and upgrades on | Dev infra & RPC | Generated | Yes |
-| [`quicknode`](skills/quicknode) | Fast RPC endpoints and streaming data across many chains | Dev infra & RPC | Generated | Yes |
+| [`quicknode`](skills/quicknode) | QuickNode is hosted RPC (HTTP + WebSocket) plus Streams, Webhooks and a testnet faucet… | Dev infra & RPC | **Tested** 2026-10-19 | Yes |
 | [`scaffold-eth`](skills/scaffold-eth) | A starter kit with contracts, a front end and hot reload, ready to fork | Dev infra & RPC | Generated |  |
 | [`tenderly`](skills/tenderly) | Simulate and debug transactions, and test on virtual testnets | Dev infra & RPC | Generated |  |
 | [`eas`](skills/eas) | Open attestations for reputation, credentials and proofs | Identity & humans | Generated |  |
