@@ -2,6 +2,11 @@
 
 All notable changes to this repository. Dates are in UTC.
 
+## Unreleased
+
+### Added
+- Tested skills: Goldsky.
+
 ## 0.3.0 — 2026-10-19
 
 ### Added
