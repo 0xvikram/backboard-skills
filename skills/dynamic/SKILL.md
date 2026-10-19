@@ -1,6 +1,12 @@
 ---
 name: dynamic
 description: "Use when building with Dynamic (its team describes it as: 'A drop-in login widget with wallets, email and social sign-in'). Points you to Dynamic's own docs for AI assistants and its MCP server, and gives the facts for using it at ETHGlobal Mumbai."
+license: MIT
+metadata:
+  category: "Wallets & onboarding"
+  website: "https://dynamic.xyz"
+  source: "generated"
+  generated: "2026-10-19"
 ---
 <!-- backboard:generated -->
 

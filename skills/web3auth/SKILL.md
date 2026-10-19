@@ -1,6 +1,12 @@
 ---
 name: web3auth
 description: "Use when building with Web3Auth (its team describes it as: 'Social login that creates a wallet for your users'). Points you to Web3Auth's own docs for AI assistants, and gives the facts for using it at ETHGlobal Mumbai."
+license: MIT
+metadata:
+  category: "Wallets & onboarding"
+  website: "https://web3auth.io"
+  source: "generated"
+  generated: "2026-10-19"
 ---
 <!-- backboard:generated -->
 

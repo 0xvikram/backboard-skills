@@ -1,6 +1,12 @@
 ---
 name: lit
 description: "Use when building with Lit Protocol (its team describes it as: 'Programmable keys and encryption for agents that hold secrets'). Points you to Lit Protocol's own docs for AI assistants, and gives the facts for using it at ETHGlobal Mumbai."
+license: MIT
+metadata:
+  category: "AI & agents"
+  website: "https://litprotocol.com"
+  source: "generated"
+  generated: "2026-10-19"
 ---
 <!-- backboard:generated -->
 

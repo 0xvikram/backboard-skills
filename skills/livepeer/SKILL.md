@@ -1,6 +1,12 @@
 ---
 name: livepeer
 description: "Use when building with Livepeer (its team describes it as: 'Video streaming and AI video pipelines'). Points you to Livepeer's own docs for AI assistants, and gives the facts for using it at ETHGlobal Mumbai."
+license: MIT
+metadata:
+  category: "Social & messaging"
+  website: "https://livepeer.org"
+  source: "generated"
+  generated: "2026-10-19"
 ---
 <!-- backboard:generated -->
 

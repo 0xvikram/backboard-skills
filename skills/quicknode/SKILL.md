@@ -1,6 +1,12 @@
 ---
 name: quicknode
 description: "Use when building with QuickNode (its team describes it as: 'Fast RPC endpoints and streaming data across many chains'). Points you to QuickNode's own docs for AI assistants and its MCP server, and gives the facts for using it at ETHGlobal Mumbai."
+license: MIT
+metadata:
+  category: "Dev infra & RPC"
+  website: "https://quicknode.com"
+  source: "generated"
+  generated: "2026-10-19"
 ---
 <!-- backboard:generated -->
 

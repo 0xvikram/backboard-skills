@@ -1,6 +1,12 @@
 ---
 name: daimo
 description: "Use when building with Daimo Pay (its team describes it as: 'Let users pay from any chain or coin in one step'). Points you to Daimo Pay's own docs for AI assistants, and gives the facts for using it at ETHGlobal Mumbai."
+license: MIT
+metadata:
+  category: "Payments & stablecoins"
+  website: "https://daimo.com"
+  source: "generated"
+  generated: "2026-10-19"
 ---
 <!-- backboard:generated -->
 

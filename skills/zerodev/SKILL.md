@@ -1,6 +1,12 @@
 ---
 name: zerodev
 description: "Use when building with ZeroDev (its team describes it as: 'Smart accounts with session keys and gas sponsorship'). Points you to ZeroDev's own docs for AI assistants, and gives the facts for using it at ETHGlobal Mumbai."
+license: MIT
+metadata:
+  category: "Wallets & onboarding"
+  website: "https://zerodev.app"
+  source: "generated"
+  generated: "2026-10-19"
 ---
 <!-- backboard:generated -->
 

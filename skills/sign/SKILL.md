@@ -1,6 +1,12 @@
 ---
 name: sign
 description: "Use when building with Sign Protocol (its team describes it as: 'Issue and verify attestations across chains'). Points you to Sign Protocol's own docs for AI assistants, and gives the facts for using it at ETHGlobal Mumbai."
+license: MIT
+metadata:
+  category: "Identity & humans"
+  website: "https://sign.global"
+  source: "generated"
+  generated: "2026-10-19"
 ---
 <!-- backboard:generated -->
 

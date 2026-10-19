@@ -1,6 +1,12 @@
 ---
 name: the-graph
 description: "Use when building with The Graph (its team describes it as: 'Subgraphs to get onchain data into your front end'). Points you to The Graph's own docs for AI assistants, and gives the facts for using it at ETHGlobal Mumbai."
+license: MIT
+metadata:
+  category: "Data & storage"
+  website: "https://thegraph.com"
+  source: "generated"
+  generated: "2026-10-19"
 ---
 <!-- backboard:generated -->
 

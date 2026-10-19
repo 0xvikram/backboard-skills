@@ -1,6 +1,12 @@
 ---
 name: fetch-ai
 description: "Use when building with Fetch.ai uAgents (its team describes it as: 'A Python framework for agents that find and talk to each other'). Points you to Fetch.ai uAgents's own docs for AI assistants, and gives the facts for using it at ETHGlobal Mumbai."
+license: MIT
+metadata:
+  category: "AI & agents"
+  website: "https://fetch.ai"
+  source: "generated"
+  generated: "2026-10-19"
 ---
 <!-- backboard:generated -->
 

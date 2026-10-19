@@ -1,6 +1,12 @@
 ---
 name: xmtp
 description: "Use when building with XMTP (its team describes it as: 'Wallet-to-wallet messaging for chat and agent apps'). Points you to XMTP's own docs for AI assistants and its MCP server, and gives the facts for using it at ETHGlobal Mumbai."
+license: MIT
+metadata:
+  category: "Social & messaging"
+  website: "https://xmtp.org"
+  source: "generated"
+  generated: "2026-10-19"
 ---
 <!-- backboard:generated -->
 

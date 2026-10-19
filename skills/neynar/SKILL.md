@@ -1,6 +1,12 @@
 ---
 name: neynar
 description: "Use when building with Neynar (its team describes it as: 'Farcaster APIs to add social features or ship a mini app'). Points you to Neynar's own docs for AI assistants, and gives the facts for using it at ETHGlobal Mumbai."
+license: MIT
+metadata:
+  category: "Social & messaging"
+  website: "https://neynar.com"
+  source: "generated"
+  generated: "2026-10-19"
 ---
 <!-- backboard:generated -->
 

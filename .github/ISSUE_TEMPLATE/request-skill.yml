@@ -1,0 +1,17 @@
+name: Request a tested skill
+description: Ask for a hand-written, tested skill for a tool on the board.
+labels: ["request"]
+body:
+  - type: input
+    id: tool
+    attributes:
+      label: Tool
+    validations:
+      required: true
+  - type: textarea
+    id: need
+    attributes:
+      label: What do you want the skill to cover?
+      description: The things you're trying to build with it, or where your assistant keeps getting it wrong.
+    validations:
+      required: true

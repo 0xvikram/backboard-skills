@@ -1,6 +1,12 @@
 ---
 name: blockscout
 description: "Use when building with Blockscout (its team describes it as: 'An open-source explorer and APIs to verify contracts and show transactions'). Points you to Blockscout's own docs for AI assistants, and gives the facts for using it at ETHGlobal Mumbai."
+license: MIT
+metadata:
+  category: "Dev infra & RPC"
+  website: "https://blockscout.com"
+  source: "generated"
+  generated: "2026-10-19"
 ---
 <!-- backboard:generated -->
 

@@ -1,6 +1,12 @@
 ---
 name: reclaim
 description: "Use when building with Reclaim Protocol (its team describes it as: 'Let users prove data from any website without sharing their login'). Points you to Reclaim Protocol's own docs for AI assistants, and gives the facts for using it at ETHGlobal Mumbai."
+license: MIT
+metadata:
+  category: "Identity & humans"
+  website: "https://reclaimprotocol.org"
+  source: "generated"
+  generated: "2026-10-19"
 ---
 <!-- backboard:generated -->
 

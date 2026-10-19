@@ -1,6 +1,12 @@
 ---
 name: reown
 description: "Use when building with Reown AppKit (its team describes it as: 'Add wallet connection to your app in the first hour'). Points you to Reown AppKit's own docs for AI assistants, and gives the facts for using it at ETHGlobal Mumbai."
+license: MIT
+metadata:
+  category: "Wallets & onboarding"
+  website: "https://reown.com"
+  source: "generated"
+  generated: "2026-10-19"
 ---
 <!-- backboard:generated -->
 

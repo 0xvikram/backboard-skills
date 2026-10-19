@@ -1,6 +1,12 @@
 ---
 name: morpho
 description: "Use when building with Morpho (its team describes it as: 'Lending vaults and markets to plug yield or borrowing into your app'). Points you to Morpho's own docs for AI assistants, and gives the facts for using it at ETHGlobal Mumbai."
+license: MIT
+metadata:
+  category: "DeFi & trading"
+  website: "https://morpho.org"
+  source: "generated"
+  generated: "2026-10-19"
 ---
 <!-- backboard:generated -->
 

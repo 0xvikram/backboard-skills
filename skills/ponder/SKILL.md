@@ -1,6 +1,12 @@
 ---
 name: ponder
 description: "Use when building with Ponder (its team describes it as: 'A TypeScript-first indexer for small teams moving fast'). Points you to Ponder's own docs for AI assistants, and gives the facts for using it at ETHGlobal Mumbai."
+license: MIT
+metadata:
+  category: "Data & storage"
+  website: "https://ponder.sh"
+  source: "generated"
+  generated: "2026-10-19"
 ---
 <!-- backboard:generated -->
 

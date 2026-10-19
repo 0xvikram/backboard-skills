@@ -1,6 +1,12 @@
 ---
 name: dune
 description: "Use when building with Dune (its team describes it as: 'Query onchain data with SQL and pull it into your app by API'). Points you to Dune's own docs for AI assistants, and gives the facts for using it at ETHGlobal Mumbai."
+license: MIT
+metadata:
+  category: "Data & storage"
+  website: "https://dune.com"
+  source: "generated"
+  generated: "2026-10-19"
 ---
 <!-- backboard:generated -->
 

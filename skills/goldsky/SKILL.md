@@ -1,6 +1,12 @@
 ---
 name: goldsky
 description: "Use when building with Goldsky (its team describes it as: 'Hosted subgraphs and real-time data pipelines'). Points you to Goldsky's own docs for AI assistants and its MCP server, and gives the facts for using it at ETHGlobal Mumbai."
+license: MIT
+metadata:
+  category: "Data & storage"
+  website: "https://goldsky.com"
+  source: "generated"
+  generated: "2026-10-19"
 ---
 <!-- backboard:generated -->
 

@@ -1,6 +1,12 @@
 ---
 name: envio
 description: "Use when building with Envio (its team describes it as: 'HyperIndex gets a multichain indexer running in minutes'). Points you to Envio's own docs for AI assistants and its MCP server, and gives the facts for using it at ETHGlobal Mumbai."
+license: MIT
+metadata:
+  category: "Data & storage"
+  website: "https://envio.dev"
+  source: "generated"
+  generated: "2026-10-19"
 ---
 <!-- backboard:generated -->
 

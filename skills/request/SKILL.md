@@ -1,6 +1,12 @@
 ---
 name: request
 description: "Use when building with Request Network (its team describes it as: 'Stablecoin invoices and payment requests'). Points you to Request Network's own docs for AI assistants, and gives the facts for using it at ETHGlobal Mumbai."
+license: MIT
+metadata:
+  category: "Payments & stablecoins"
+  website: "https://request.network"
+  source: "generated"
+  generated: "2026-10-19"
 ---
 <!-- backboard:generated -->
 

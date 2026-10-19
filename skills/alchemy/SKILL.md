@@ -1,6 +1,12 @@
 ---
 name: alchemy
 description: "Use when building with Alchemy (its team describes it as: 'RPC, data APIs and smart wallet tooling in one account'). Points you to Alchemy's own docs for AI assistants and its MCP server, and gives the facts for using it at ETHGlobal Mumbai."
+license: MIT
+metadata:
+  category: "Dev infra & RPC"
+  website: "https://alchemy.com"
+  source: "generated"
+  generated: "2026-10-19"
 ---
 <!-- backboard:generated -->
 

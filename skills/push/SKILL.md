@@ -1,6 +1,12 @@
 ---
 name: push
 description: "Use when building with Push Chain (its team describes it as: 'Wallet notifications and chat for your users'). Points you to Push Chain's own docs for AI assistants, and gives the facts for using it at ETHGlobal Mumbai."
+license: MIT
+metadata:
+  category: "Social & messaging"
+  website: "https://push.org"
+  source: "generated"
+  generated: "2026-10-19"
 ---
 <!-- backboard:generated -->
 
