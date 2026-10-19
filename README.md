@@ -131,7 +131,7 @@ Whatever the kind, the tool's official docs win over the skill when the two disa
 | [`dynamic`](skills/dynamic) | Dynamic (dynamic.xyz) wallet login for React: DynamicWidget sign-in with email, social… | Wallets & onboarding | **Tested** 2026-10-19 |  |
 | [`pimlico`](skills/pimlico) | Pimlico is ERC-4337 account abstraction infra (bundler + paymaster) used with… | Wallets & onboarding | **Tested** 2026-10-19 | Yes |
 | [`privy`](skills/privy) | Privy gives your app email/social/wallet login plus embedded wallets for every user, in… | Wallets & onboarding | **Tested** 2026-10-19 | Yes |
-| [`reown`](skills/reown) | Add wallet connection to your app in the first hour | Wallets & onboarding | Generated |  |
+| [`reown`](skills/reown) | Reown AppKit (formerly WalletConnect Web3Modal): a connect-wallet modal for React,… | Wallets & onboarding | **Tested** 2026-10-19 |  |
 | [`safe`](skills/safe) | Safe (Safe{Wallet}, formerly Gnosis Safe) is the standard multisig smart account, with… | Wallets & onboarding | **Tested** 2026-10-19 |  |
 | [`thirdweb`](skills/thirdweb) | thirdweb TypeScript SDK v5 (`thirdweb` npm package): wallet connect UI, in-app wallets… | Wallets & onboarding | **Tested** 2026-10-19 | Yes |
 | [`web3auth`](skills/web3auth) | Social login that creates a wallet for your users | Wallets & onboarding | Generated |  |
