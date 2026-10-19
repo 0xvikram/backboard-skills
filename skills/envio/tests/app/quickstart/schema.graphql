@@ -1,0 +1,14 @@
+type Account {
+  id: ID! # user address
+  balance: BigInt!
+  depositCount: Int!
+  deposits: [Deposit!]! @derivedFrom(field: "account")
+}
+
+type Deposit {
+  id: ID! # chainId_block_logIndex
+  account: Account!
+  amount: BigInt!
+  timestamp: Int!
+  txHash: String!
+}

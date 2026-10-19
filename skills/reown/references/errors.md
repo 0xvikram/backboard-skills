@@ -46,6 +46,7 @@ Cause: https://docs.reown.com/appkit/networks/custom-networks.md and the FAQ sho
 
 Fix:
 
+<!-- verify:skip -->
 ```ts
 customRpcUrls: { 'eip155:1': [{ url: 'https://your.rpc' }] }
 ```

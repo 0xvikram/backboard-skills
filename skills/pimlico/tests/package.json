@@ -1,0 +1,19 @@
+{
+  "name": "pimlico-skill-tests",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "node prep-blocks.mjs && tsc -p .",
+    "live": "tsx live.ts"
+  },
+  "dependencies": {
+    "dotenv": "17.2.3",
+    "permissionless": "0.5.0",
+    "viem": "2.57.7"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2"
+  }
+}

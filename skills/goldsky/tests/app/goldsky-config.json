@@ -1,0 +1,13 @@
+{
+  "version": "1",
+  "name": "counter",
+  "abis": { "counter": { "path": "./abis/Counter.json" } },
+  "instances": [
+    {
+      "abi": "counter",
+      "address": "0x1111111111111111111111111111111111111111",
+      "startBlock": 1000000,
+      "chain": "arc-testnet"
+    }
+  ]
+}

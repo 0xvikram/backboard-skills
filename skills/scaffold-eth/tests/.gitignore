@@ -1,0 +1,5 @@
+node_modules/
+blocks/
+.se/
+.se-full/
+.gitconfig-verify

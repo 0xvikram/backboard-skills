@@ -1,0 +1,76 @@
+name: Verify
+
+# Re-runs every tested skill's checks: install the pinned packages, type-check every code block in the skill, run the
+# key-free live checks and (weekly) build the real project the skill describes. Opens an issue when a skill breaks.
+on:
+  schedule:
+    - cron: "0 5 * * 1,4" # Mondays and Thursdays
+  pull_request:
+    paths: ["skills/*/tests/**", "skills/*/SKILL.md", "skills/*/references/**", "scripts/verify.mjs", "scripts/extract-blocks.mjs"]
+  workflow_dispatch:
+    inputs:
+      skill:
+        description: "One skill, or all"
+        default: "all"
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  pick:
+    name: Pick skills
+    runs-on: ubuntu-latest
+    outputs:
+      skills: ${{ steps.pick.outputs.skills }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - id: pick
+        env:
+          EVENT: ${{ github.event_name }}
+          BASE: ${{ github.event.pull_request.base.sha }}
+          ONE: ${{ github.event.inputs.skill }}
+        run: |
+          all=$(ls -d skills/*/tests/package.json 2>/dev/null | cut -d/ -f2 | sort -u)
+          if [ "$EVENT" = pull_request ]; then
+            if git diff --name-only "$BASE" HEAD | grep -qE '^scripts/(verify|extract-blocks)\.mjs$'; then picked="$all"
+            else picked=$(git diff --name-only "$BASE" HEAD | grep '^skills/' | cut -d/ -f2 | sort -u | grep -Fxf <(echo "$all") || true); fi
+          elif [ -n "$ONE" ] && [ "$ONE" != all ]; then picked="$ONE"
+          else picked="$all"; fi
+          echo "skills=$(printf '%s\n' $picked | jq -R . | jq -sc 'map(select(length>0))')" >> "$GITHUB_OUTPUT"
+          echo "Picked: $(echo $picked)"
+
+  verify:
+    name: ${{ matrix.skill }}
+    needs: pick
+    if: needs.pick.outputs.skills != '[]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        skill: ${{ fromJson(needs.pick.outputs.skills) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Verify ${{ matrix.skill }}
+        run: node scripts/verify.mjs "${{ matrix.skill }}" --full
+
+  report:
+    name: Report
+    needs: [pick, verify]
+    if: always() && github.event_name == 'schedule' && needs.verify.result == 'failure'
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          GH_TOKEN: ${{ github.token }}
+          RUN: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          gh issue create -R "${{ github.repository }}" --title "A tested skill stopped working ($(date -u +%Y-%m-%d))" \
+            --body "The scheduled verification found a tested skill whose code no longer installs, type-checks, builds or passes its live checks. See which one and why: $RUN" --label verify \
+          || gh issue create -R "${{ github.repository }}" --title "A tested skill stopped working ($(date -u +%Y-%m-%d))" \
+            --body "The scheduled verification found a tested skill whose code no longer installs, type-checks, builds or passes its live checks. See which one and why: $RUN"

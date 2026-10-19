@@ -1,0 +1,21 @@
+{
+  "name": "envio-skill-tests",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "node typecheck.mjs",
+    "live": "node live.mjs",
+    "build": "node build.mjs"
+  },
+  "dependencies": {
+    "@envio-dev/hypersync-client": "1.4.1",
+    "envio": "3.14.0",
+    "viem": "2.57.7"
+  },
+  "devDependencies": {
+    "@types/node": "24.12.2",
+    "tsx": "4.21.0",
+    "typescript": "6.0.3",
+    "vitest": "4.1.0"
+  }
+}

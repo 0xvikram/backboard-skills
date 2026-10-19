@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=./node_modules/envio/evm.schema.json
+# references/quickstart.md section 3, with <CONTRACT_ADDRESS> filled in.
+name: vault-indexer
+disable_default_cross_chain: true # added by init; entities are per-chain (id + chainId)
+contracts:
+  - name: Vault
+    events:
+      - event: Deposit(address indexed user, uint256 amount)
+      - event: Withdraw(address indexed user, uint256 amount)
+chains:
+  - id: 5042002 # Arc Testnet (HyperSync)
+    start_block: 0 # 0 is fine on HyperSync (it skips ahead); your deploy block is better
+    contracts:
+      - name: Vault
+        address: "0x0000000000000000000000000000000000000001"

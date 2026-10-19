@@ -44,6 +44,16 @@ metadata:
 
 Link reference files from `SKILL.md` with relative links (`[recipes](references/recipes.md)`), so the assistant loads them only when needed.
 
+## Tests for a tested skill
+
+A skill marked `source: "tested"` must include `tests/` so anyone can re-run its checks with `node scripts/verify.mjs <tool>`:
+
+- `package.json` with exact versions (no `^`) and npm scripts: `typecheck` (required), `live` (key-free checks against public services; exit 75 when a service can't be reached), `build` (optional, runs with `--full`).
+- `tsconfig.json` that includes `blocks/`: the runner writes every code block from your SKILL.md and references there, so the code people copy is the code that gets checked.
+- `README.md` saying what is and isn't checked. Mark a code block that can't stand alone with `<!-- verify:skip -->` on the line above it, and say why.
+
+No keys, wallets with funds, Docker or global installs. Look at `skills/privy/tests/` for an example.
+
 ## Rules every skill must follow
 
 - **Current and official.** Base code on the tool's current official docs and link to them. Pin the versions you tested.

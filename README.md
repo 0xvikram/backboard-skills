@@ -7,6 +7,7 @@
 Install one, and your AI coding assistant knows the tool's real docs, its MCP server, the chains it runs on and the mistakes to avoid.
 
 [![Validate](https://github.com/0xvikram/backboard-skills/actions/workflows/ci.yml/badge.svg)](https://github.com/0xvikram/backboard-skills/actions/workflows/ci.yml)
+[![Verify](https://github.com/0xvikram/backboard-skills/actions/workflows/verify.yml/badge.svg)](https://github.com/0xvikram/backboard-skills/actions/workflows/verify.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-a8f20a)](LICENSE)
 [![Skills format](https://img.shields.io/badge/format-Agent%20Skills-0b3b2d)](https://github.com/vercel-labs/skills)
 
@@ -65,6 +66,19 @@ There are two kinds:
 | **Generated** | The tool's own docs, AI docs (llms.txt) and MCP server, plus its chains, prize-track fit and support links | Written automatically when a tool is approved on the board; contains no code, so it can't teach a wrong API |
 
 Whatever the kind, the tool's official docs win over the skill when the two disagree.
+
+## Verify a skill yourself
+
+Every **Tested** skill ships with its checks in `skills/<tool>/tests/`, so you don't have to take our word for it. With Node 22 or later:
+
+```bash
+git clone https://github.com/0xvikram/backboard-skills && cd backboard-skills
+node scripts/verify.mjs privy          # install pinned packages, type-check every code block, run the live checks
+node scripts/verify.mjs privy --full   # also build the real app the skill describes (e.g. next build)
+node scripts/verify.mjs all            # every tested skill
+```
+
+The checks use no API keys, wallets or funds. Live checks only read from public services; anything that needs a key (real logins, transactions, deploys) is listed as not checked in each skill's `tests/README.md`. The same checks run in GitHub [twice a week](https://github.com/0xvikram/backboard-skills/actions/workflows/verify.yml), and an issue is opened when a skill breaks.
 
 ## Catalog
 

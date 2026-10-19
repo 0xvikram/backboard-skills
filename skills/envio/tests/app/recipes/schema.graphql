@@ -1,0 +1,14 @@
+# recipes.md section 3 (Vault) + the Mint entity recipe 4's wildcard handler writes.
+type Vault {
+  id: ID! # vault address
+  asset: String!
+  assetDecimals: Int!
+  totalDeposited: BigInt!
+}
+
+type Mint {
+  id: ID!
+  token: String!
+  to: String!
+  value: BigInt!
+}

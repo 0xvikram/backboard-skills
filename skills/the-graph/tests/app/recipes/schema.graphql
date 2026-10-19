@@ -1,0 +1,34 @@
+type Account @entity(immutable: false) {
+  id: Bytes!
+  balance: BigInt!
+  transferCount: Int!
+  sent: [Transfer!]! @derivedFrom(field: "from")
+  received: [Transfer!]! @derivedFrom(field: "to")
+}
+
+type Transfer @entity(immutable: true) {
+  id: Bytes!
+  from: Account!
+  to: Account!
+  value: BigInt!
+  blockNumber: BigInt!
+  timestamp: BigInt!
+  txHash: Bytes!
+}
+
+type Token @entity(immutable: false) {
+  id: Bytes!
+  totalSupply: BigInt!
+}
+type TransferPoint @entity(timeseries: true) {
+  id: Int8!
+  timestamp: Timestamp!
+  value: BigInt!
+}
+
+type Volume @aggregation(intervals: ["hour", "day"], source: "TransferPoint") {
+  id: Int8!
+  timestamp: Timestamp!
+  volume: BigInt! @aggregate(fn: "sum", arg: "value")
+  transfers: Int8! @aggregate(fn: "count")
+}
