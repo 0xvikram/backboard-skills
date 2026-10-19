@@ -69,7 +69,7 @@ Whatever the kind, the tool's official docs win over the skill when the two disa
 
 ## Verify a skill yourself
 
-Every **Tested** skill ships with its checks in `skills/<tool>/tests/`, so you don't have to take our word for it. With Node 22 or later:
+Every **Tested** skill ships with its checks in `skills/<tool>/tests/`, so you don't have to take our word for it. With Node 24 or later (what CI uses; Node 22 ships an npm 10 bug that breaks some installs):
 
 ```bash
 git clone https://github.com/0xvikram/backboard-skills && cd backboard-skills
