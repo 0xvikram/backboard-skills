@@ -19,9 +19,33 @@ Site: https://transak.com
 ## Before you write code with Transak
 
 1. Read Transak's docs written for AI assistants: https://docs.transak.com/llms.txt
-2. Set up Transak's MCP server and use it to look things up while you code: https://docs.transak.com/guides/how-to-add-mcp-server-for-transak-documentation
+2. Connect Transak's MCP server (setup below) and use it to look things up while you code.
 3. Use the full docs for anything the AI docs don't cover: https://transak.com
 4. Check the latest version of its SDK or package before you install it, and follow the current API in those docs instead of what you remember.
+
+## Connect Transak's MCP server
+
+Docs only, no key. Setup from https://docs.transak.com/guides/how-to-add-mcp-server-for-transak-documentation
+
+Claude Code:
+
+```bash
+claude mcp add --transport http docs.transak.com https://docs.transak.com/_mcp/server
+```
+
+Cursor (add to `.cursor/mcp.json`):
+
+```json
+{
+  "mcpServers": {
+    "docs.transak.com": {
+      "name": "docs.transak.com",
+      "url": "https://docs.transak.com/_mcp/server",
+      "headers": {}
+    }
+  }
+}
+```
 
 ## Building at ETHGlobal Mumbai
 
