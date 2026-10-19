@@ -112,7 +112,7 @@ Whatever the kind, the tool's official docs win over the skill when the two disa
 | [`hardhat`](skills/hardhat) | The development environment for compiling, testing and deploying contracts | Dev infra & RPC | Generated |  |
 | [`openzeppelin`](skills/openzeppelin) | Audited contract libraries to build your token, access control and upgrades on | Dev infra & RPC | Generated | Yes |
 | [`quicknode`](skills/quicknode) | QuickNode is hosted RPC (HTTP + WebSocket) plus Streams, Webhooks and a testnet faucet… | Dev infra & RPC | **Tested** 2026-10-19 | Yes |
-| [`scaffold-eth`](skills/scaffold-eth) | A starter kit with contracts, a front end and hot reload, ready to fork | Dev infra & RPC | Generated |  |
+| [`scaffold-eth`](skills/scaffold-eth) | Scaffold-ETH 2 (create-eth) is a full-stack EVM dapp starter: Solidity (Hardhat or… | Dev infra & RPC | **Tested** 2026-10-19 | Yes |
 | [`tenderly`](skills/tenderly) | Simulate and debug transactions, and test on virtual testnets | Dev infra & RPC | Generated |  |
 | [`eas`](skills/eas) | Open attestations for reputation, credentials and proofs | Identity & humans | Generated |  |
 | [`namespace-53d629`](skills/namespace-53d629) | Namespace issues ENS subnames (alice.yourapp.eth): gasless offchain subnames through an… | Identity & humans | **Tested** 2026-10-19 | Yes |
