@@ -1,6 +1,6 @@
 ---
 name: track-arc
-description: "Use when building for the Arc prize track at ETHGlobal Mumbai (Circle's L1 for payments, FX and lending). Lists the tools on Backboard that fit the track, past winning projects for ideas, and where the official rules are."
+description: "Use when building for the Arc prize track at ETHGlobal Mumbai (Apps built in Arc Studio: DeFi, payments and consumer agents). Lists the tools on Backboard that fit the track, past winning projects for ideas, and where the official rules are."
 license: MIT
 metadata:
   category: "Prize track guide"
@@ -11,7 +11,7 @@ metadata:
 
 # Arc track at ETHGlobal Mumbai
 
-Arc's track, in its own words: Circle's L1 for payments, FX and lending.
+Arc's track, in its own words: Apps built in Arc Studio: DeFi, payments and consumer agents.
 
 **The rules, requirements and prizes are only on ETHGlobal's official page: https://ethglobal.com/events/mumbai/prizes.** Read the Arc section there before planning, and check it again before you submit. This skill never restates them.
 

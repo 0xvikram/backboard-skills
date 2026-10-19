@@ -1,6 +1,6 @@
 ---
 name: track-ef
-description: "Use when building for the Ethereum Foundation prize track at ETHGlobal Mumbai (Prize details not published yet). Lists the tools on Backboard that fit the track, past winning projects for ideas, and where the official rules are."
+description: "Use when building for the Ethereum Foundation prize track at ETHGlobal Mumbai (Privacy: Anon-RPC and private, censorship-resistant apps). Lists the tools on Backboard that fit the track, past winning projects for ideas, and where the official rules are."
 license: MIT
 metadata:
   category: "Prize track guide"
@@ -11,7 +11,7 @@ metadata:
 
 # Ethereum Foundation track at ETHGlobal Mumbai
 
-Ethereum Foundation's track, in its own words: Prize details not published yet.
+Ethereum Foundation's track, in its own words: Privacy: Anon-RPC and private, censorship-resistant apps.
 
 **The rules, requirements and prizes are only on ETHGlobal's official page: https://ethglobal.com/events/mumbai/prizes.** Read the Ethereum Foundation section there before planning, and check it again before you submit. This skill never restates them.
 
