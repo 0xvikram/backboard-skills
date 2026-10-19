@@ -100,7 +100,7 @@ Whatever the kind, the tool's official docs win over the skill when the two disa
 | [`olas`](skills/olas) | A framework for building and running autonomous agents | AI & agents | Generated |  |
 | [`dune`](skills/dune) | Query onchain data with SQL and pull it into your app by API | Data & storage | Generated |  |
 | [`envio`](skills/envio) | HyperIndex gets a multichain indexer running in minutes | Data & storage | Generated | Yes |
-| [`goldsky`](skills/goldsky) | Hosted subgraphs and real-time data pipelines | Data & storage | Generated | Yes |
+| [`goldsky`](skills/goldsky) | Goldsky hosts subgraphs (GraphQL APIs over contract events, The Graph compatible) and… | Data & storage | **Tested** 2026-10-19 | Yes |
 | [`pinata`](skills/pinata) | Upload files to IPFS with one API call | Data & storage | Generated | Yes |
 | [`ponder`](skills/ponder) | A TypeScript-first indexer for small teams moving fast | Data & storage | Generated |  |
 | [`the-graph`](skills/the-graph) | The Graph indexes smart-contract events into a GraphQL API (a subgraph). Use this skill… | Data & storage | **Tested** 2026-10-19 | Yes |
