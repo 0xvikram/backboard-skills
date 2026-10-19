@@ -2,7 +2,7 @@
 
 All notable changes to this repository. Dates are in UTC.
 
-## Unreleased
+## 0.2.0 — 2026-10-19
 
 ### Added
 - README with a quickstart, how skills work, an FAQ and a catalog of every skill, rebuilt automatically.
