@@ -5,7 +5,7 @@ All notable changes to this repository. Dates are in UTC.
 ## Unreleased
 
 ### Added
-- Tested, hand-written skills for Alchemy, Pimlico, Privy, Dynamic, thirdweb and Onramp.money: quickstart, 7–8 recipes, 11–13 common errors, sponsor-chain support and MCP setup each; every code example type-checked, with builds and offline tests where possible.
+- Tested, hand-written skills for Alchemy, Pimlico, Privy, Dynamic, thirdweb, Onramp.money and Namespace: quickstart, 7–8 recipes, 11–13 common errors, sponsor-chain support and MCP setup each; every code example type-checked, with builds and offline tests where possible.
 
 ## 0.2.0 — 2026-10-19
 
