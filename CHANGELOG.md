@@ -6,6 +6,7 @@ All notable changes to this repository. Dates are in UTC.
 
 ### Added
 - Tested skills: Goldsky, QuickNode, Envio, Reown AppKit, Scaffold-ETH 2.
+- **Re-runnable tests for all 15 tested skills** (`skills/<tool>/tests/`): `node scripts/verify.mjs <tool>` installs the pinned packages, type-checks every code block in the skill, runs key-free live checks, and with `--full` builds the real app the skill describes. A GitHub workflow runs them twice a week and opens an issue when a skill breaks.
 - The validator allows well-known public event hashes (ERC-20 and ERC-1155 Transfer/Approval), which look like private keys but aren't.
 
 ## 0.3.0 — 2026-10-19

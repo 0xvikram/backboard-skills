@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=./node_modules/envio/evm.schema.json
+# references/recipes.md section 2, with <FACTORY_ADDRESS> / <DEPLOY_BLOCK> filled in.
+name: recipes-indexer
+disable_default_cross_chain: true # entities are per chain; mark shared ones with @crossChain
+contracts:
+  - name: VaultFactory
+    events:
+      - event: VaultCreated(address indexed vault, address indexed asset)
+  - name: Vault
+    events:
+      - event: Deposit(address indexed user, uint256 amount)
+  - name: ERC20
+    events:
+      - event: Transfer(address indexed from, address indexed to, uint256 value)
+chains:
+  - id: 130 # Unichain (HyperSync)
+    start_block: 0
+    contracts:
+      - name: VaultFactory
+        address: "${ENVIO_FACTORY_UNICHAIN:-0x0000000000000000000000000000000000000002}"
+      - name: Vault # no address: added at runtime by contractRegister (recipe 3)
+      - name: ERC20 # no address + wildcard handler (recipe 4)
+  - id: 480 # World Chain (HyperSync)
+    start_block: latest # start at the current head (v3.11+)
+    contracts:
+      - name: VaultFactory
+        address: "0x0000000000000000000000000000000000000003"
+      - name: Vault
+  - id: 296 # Hedera testnet: no HyperSync, so rpc is required
+    rpc: ${ENVIO_HEDERA_TESTNET_RPC:-https://testnet.hashio.io/api}
+    start_block: 0 # RPC sync from 0 is very slow
+    contracts:
+      - name: VaultFactory
+        address: "0x0000000000000000000000000000000000000004"
+      - name: Vault

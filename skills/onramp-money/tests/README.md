@@ -1,0 +1,13 @@
+# onramp-money: tests
+
+Run from the repo root: `node scripts/verify.mjs onramp-money` (add `--full` for the bundler check). No Onramp API key or secret, no money.
+
+| Script | What it checks |
+| --- | --- |
+| `typecheck` | `prep.mjs` adds `blocks/onramp-url.ts` and `blocks/onramp-api.ts` (one-line re-exports of the quickstart URL builder and the recipes signing block, found by content), because the recipes import those file names. Then strict `tsc` (bundler resolution, as errors.md #6 advises) over all blocks, `sdk-types.ts` (two `@ts-expect-error` misuses the SDK types must reject) and `unit.ts`. |
+| `live` = `unit.ts` then `live.mjs` | **Local first (`unit.ts`, no network):** the URL builder equals the docs' hosted-mode example URL byte for byte, encodes `+91-...` and `redirectUrl`, rejects fiat + coin amounts; SKILL.md and quickstart builders print the same sandbox URL; recipes 1-2 run. Signing: `node:crypto` HMAC-SHA512 equals the docs' `crypto-js` output, payload decodes to `{timestamp, body}`; webhook verify passes/fails correctly (wrong secret, tampered payload, missing header, short signature). The Express 5 webhook block runs on a free local port: signed POST 200, duplicate logged once, bad signature 403. Web SDK 2.0.1 in jsdom with `fetch` stubbed: plain Node import has no named export (errors.md #5), the 7 config errors in errors.md #4, `show()` calls `sdk-apis/generate-url` with the right params, iframe mounts/closes, `postMessage` events arrive with no origin check (#9), `sandbox: true` URL. **Then live (`live.mjs`, GET only):** `listAllCoins`; `coinNetworks` 400 shape without params; USDT/INR lists `bep20`, `matic20` (Onramp id 3) and sandbox `bep20-test`; USDC/INR still lists `wld`, `arc`, `hbar` (chains.md); the recipes.md coin/price block runs for real; sell `allConfig`; `currentTimestamp` near the local clock; `sdk-apis/generate-url` for the public sandbox app returns a `bep20-test` widget URL. |
+| `build` (`build.mjs`, `--full`) | esbuild browser bundle of the overlay quickstart block + the React `BuyCryptoButton` block; checks esbuild pulled in the SDK's ES build (`dist/onramp-web-sdk.es5.js`) via its `module` field (errors.md #5). |
+
+**Not checked:** any signed REST call (`orderStatus`, `generateLink`, `quotes`, `setWebhookUrl`, `sendDummyWebhook`; they need keys), a real webhook from Onramp and the real `x-onramp-payload` content, a sandbox order (phone + OTP), the widget pages themselves (the sandbox network error in errors.md #1 and the World Chain behaviour in chains.md were seen in a headless browser in the original test; here only the API side is checked), Hedera/Arc in the widget, the React Native / mobile SDKs.
+
+No `verify:skip` lines.

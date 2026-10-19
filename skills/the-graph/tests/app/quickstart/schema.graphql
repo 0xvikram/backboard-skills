@@ -1,0 +1,17 @@
+type Account @entity(immutable: false) {
+  id: Bytes!                     # the address
+  balance: BigInt!
+  transferCount: Int!
+  sent: [Transfer!]! @derivedFrom(field: "from")
+  received: [Transfer!]! @derivedFrom(field: "to")
+}
+
+type Transfer @entity(immutable: true) {
+  id: Bytes!                     # tx hash + log index
+  from: Account!
+  to: Account!
+  value: BigInt!
+  blockNumber: BigInt!
+  timestamp: BigInt!
+  txHash: Bytes!
+}

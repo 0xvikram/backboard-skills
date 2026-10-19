@@ -1,0 +1,6 @@
+[
+  {"type":"event","name":"Incremented","anonymous":false,"inputs":[{"name":"by","type":"address","indexed":true},{"name":"newValue","type":"uint256","indexed":false}]},
+  {"type":"event","name":"Transfer","anonymous":false,"inputs":[{"name":"from","type":"address","indexed":true},{"name":"to","type":"address","indexed":true},{"name":"value","type":"uint256","indexed":false}]},
+  {"type":"function","name":"increment","stateMutability":"nonpayable","inputs":[],"outputs":[]},
+  {"type":"function","name":"balanceOf","stateMutability":"view","inputs":[{"name":"owner","type":"address"}],"outputs":[{"name":"","type":"uint256"}]}
+]

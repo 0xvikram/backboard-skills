@@ -1,0 +1,25 @@
+{
+  "name": "the-graph-skill-tests",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "node typecheck.mjs",
+    "live": "node live.mjs",
+    "build": "node build.mjs"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.98.1",
+    "@graphprotocol/graph-ts": "0.38.2",
+    "@urql/core": "6.0.3",
+    "graphql": "16.14.2",
+    "graphql-request": "7.4.0",
+    "react": "19.2.0",
+    "urql": "5.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "22.18.0",
+    "@types/react": "19.2.2",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3"
+  }
+}

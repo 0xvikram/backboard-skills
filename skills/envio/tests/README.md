@@ -1,0 +1,15 @@
+# envio: tests
+
+Run from the repo root: `node scripts/verify.mjs envio` (add `--full` for the simulate tests and config checks). No Envio token, no Docker.
+
+| Script | What it checks |
+| --- | --- |
+| `typecheck` (`typecheck.mjs`) | HyperIndex handler blocks only type-check inside an indexer project, so each block that imports from `"envio"` is placed (by content, not number) into one of two real projects: `app/quickstart` (references/quickstart.md config + schema for the Arc testnet Vault; the handler, the test and SKILL.md's short handler) and `app/recipes` (recipes.md multichain config 130/480/296; `effects.ts`, factory `contractRegister`, wildcard ERC20 `where`, `onBlock`). Then `envio codegen` (envio 3.14.0) and strict `tsc --noEmit` in each. The GraphQL fetch client and HyperSync client blocks are type-checked on their own. Fails if a block no longer fits a slot. |
+| `live` (`live.mjs`) | HyperSync `GET /height` without a token for the four HyperSync sponsor chains in chains.md, by ID and by name (130/unichain, 480/worldchain, 5042/arc, 5042002/arc-testnet), and that both names give the same chain. `@envio-dev/hypersync-client` 1.4.1 `getHeight()` without a token. The recipes.md HyperSync block **run for real** (its `<TOKEN_ADDRESS>` swapped for Unichain USDC, fake token): `getHeight` works and `get()` fails fast with errors.md #1 `Your token is malformed`. Docs MCP `https://docs.envio.dev/mcp`: `tools/list` (no key) has `docs_search` and `docs_fetch`. |
+| `build` (`build.mjs`, `--full`) | `vitest run` in both projects with `simulate` (no network): the skill's own quickstart test (balance 120n, depositCount 2) and a recipe 4 mint test. Then envio itself confirms the chains.md table: 130, 480, 5042, 5042002 codegen with HyperSync built in; 1301, 4801, 295, 296, 16661, 16602, 1875, 1874 fail with `Failed to automatically find HyperSync endpoint` (errors.md #2), and 296 passes once `rpc:` is set. V2 keys `rpc_config:`, `networks:` and `id: arc` are rejected with the messages in errors.md #3. |
+
+Note: tokenless HyperSync requests got slow (timeouts) when many were sent back to back while writing these tests, so the live step keeps the request count low and retries once; a timeout reports "network", not a failure. Install is the slowest step (~2 min; envio pulls a native binary and its runtime deps).
+
+**Not checked:** `envio dev` (needs Docker: Postgres + Hasura), so the GraphQL query block and its `deposits(limit: 3)` / `_meta` fields are only type-checked; any HyperSync query that returns data, and HyperRPC (need a real token); Envio Cloud and the `envio-cloud` CLI; an RPC sync against Hedera, 0G or the testnets; the public RPC URLs in chains.md (see the `sponsor-chains` skill); the interactive `envio init` wizard and `init contract-import` (it runs npm install and git init); adding the MCP server to a client. The config/schema files in `app/` are copies of the yaml/graphql blocks (the runner only extracts TS/JS); `app/recipes/schema.graphql` adds the `Mint` entity recipe 4 writes, and `app/recipes/src/indexer.test.ts` is a test written for this suite, not a skill block.
+
+No `verify:skip` lines.

@@ -1,0 +1,35 @@
+{
+  "name": "dynamic-skill-tests",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "live": "tsx live.ts",
+    "build": "node build-app.mjs"
+  },
+  "dependencies": {
+    "@dynamic-labs/ethereum": "5.12.0",
+    "@dynamic-labs/ethereum-core": "5.12.0",
+    "@dynamic-labs/sdk-api-core": "0.104.0",
+    "@dynamic-labs/sdk-react-core": "5.12.0",
+    "@dynamic-labs/types": "5.12.0",
+    "@dynamic-labs/wagmi-connector": "5.12.0",
+    "@tanstack/react-query": "5.104.4",
+    "jsonwebtoken": "9.0.3",
+    "jwks-rsa": "4.1.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "viem": "2.57.7",
+    "wagmi": "2.19.5"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "9.0.10",
+    "@types/node": "22.20.5",
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "@vitejs/plugin-react": "4.7.0",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3",
+    "vite": "5.4.21"
+  }
+}

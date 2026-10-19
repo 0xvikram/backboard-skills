@@ -1,0 +1,5 @@
+{
+  "unichain-testnet": { "WETH": { "address": "0x4200000000000000000000000000000000000006", "startBlock": 0 } },
+  "unichain":         { "WETH": { "address": "0x4200000000000000000000000000000000000006", "startBlock": 0 } },
+  "arc-testnet":      { "WETH": { "address": "0x0000000000000000000000000000000000000001", "startBlock": 0 } }
+}
