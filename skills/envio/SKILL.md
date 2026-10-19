@@ -19,9 +19,31 @@ Site: https://envio.dev
 ## Before you write code with Envio
 
 1. Read Envio's docs written for AI assistants: https://envio.dev/llms.txt
-2. Set up Envio's MCP server and use it to look things up while you code: https://docs.envio.dev/docs/HyperIndex/mcp-server
+2. Connect Envio's MCP server (setup below) and use it to look things up while you code.
 3. Use the full docs for anything the AI docs don't cover: https://envio.dev
 4. Check the latest version of its SDK or package before you install it, and follow the current API in those docs instead of what you remember.
+
+## Connect Envio's MCP server
+
+Docs only, no key. Setup from https://docs.envio.dev/docs/HyperIndex/mcp-server
+
+Claude Code:
+
+```bash
+claude mcp add --transport http envio-docs https://docs.envio.dev/mcp
+```
+
+Cursor (add to `.cursor/mcp.json`):
+
+```json
+{
+  "mcpServers": {
+    "envio-docs": {
+      "url": "https://docs.envio.dev/mcp"
+    }
+  }
+}
+```
 
 ## Building at ETHGlobal Mumbai
 

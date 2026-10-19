@@ -19,9 +19,31 @@ Site: https://aave.com
 ## Before you write code with Aave
 
 1. Read Aave's docs written for AI assistants: https://aave.com/llms.txt
-2. Set up Aave's MCP server and use it to look things up while you code: https://mcp.aave.com
+2. Connect Aave's MCP server (setup below) and use it to look things up while you code.
 3. Use the full docs for anything the AI docs don't cover: https://aave.com
 4. Check the latest version of its SDK or package before you install it, and follow the current API in those docs instead of what you remember.
+
+## Connect Aave's MCP server
+
+No key listed. Setup from https://mcp.aave.com
+
+Claude Code:
+
+```bash
+claude mcp add --transport http aave https://mcp.aave.com
+```
+
+Cursor (add to `.cursor/mcp.json`):
+
+```json
+{
+  "mcpServers": {
+    "aave": {
+      "url": "https://mcp.aave.com"
+    }
+  }
+}
+```
 
 ## Building at ETHGlobal Mumbai
 

@@ -19,9 +19,32 @@ Site: https://alchemy.com
 ## Before you write code with Alchemy
 
 1. Read Alchemy's docs written for AI assistants: https://alchemy.com/llms.txt
-2. Set up Alchemy's MCP server and use it to look things up while you code: https://www.alchemy.com/docs/alchemy-mcp-server
+2. Connect Alchemy's MCP server (setup below) and use it to look things up while you code.
 3. Use the full docs for anything the AI docs don't cover: https://alchemy.com
 4. Check the latest version of its SDK or package before you install it, and follow the current API in those docs instead of what you remember.
+
+## Connect Alchemy's MCP server
+
+OAuth: you sign in with your Alchemy account on first connect, and no API key or local install is needed. Setup from https://www.alchemy.com/docs/alchemy-mcp-server
+
+Claude Code:
+
+```bash
+claude mcp add --transport http alchemy https://mcp.alchemy.com/mcp
+```
+
+Cursor (add to `.cursor/mcp.json`):
+
+```json
+{
+  "mcpServers": {
+    "alchemy": {
+      "type": "streamable-http",
+      "url": "https://mcp.alchemy.com/mcp"
+    }
+  }
+}
+```
 
 ## Building at ETHGlobal Mumbai
 
