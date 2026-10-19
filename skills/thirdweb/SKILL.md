@@ -19,9 +19,31 @@ Site: https://thirdweb.com
 ## Before you write code with thirdweb
 
 1. Read thirdweb's docs written for AI assistants: https://portal.thirdweb.com/llms.txt
-2. Set up thirdweb's MCP server and use it to look things up while you code: https://portal.thirdweb.com/ai/mcp
+2. Connect thirdweb's MCP server (setup below) and use it to look things up while you code.
 3. Use the full docs for anything the AI docs don't cover: https://thirdweb.com
 4. Check the latest version of its SDK or package before you install it, and follow the current API in those docs instead of what you remember.
+
+## Connect thirdweb's MCP server
+
+Needs a thirdweb project secret key, passed in the URL as the secretKey query parameter, not as an env var. Setup from https://portal.thirdweb.com/ai/mcp
+
+Claude Code:
+
+```bash
+claude mcp add --transport http thirdweb-api "https://api.thirdweb.com/mcp?secretKey=<YOUR_THIRDWEB_SECRET_KEY>"
+```
+
+Cursor (add to `.cursor/mcp.json`):
+
+```json
+{
+  "mcpServers": {
+    "thirdweb-api": {
+      "url": "https://api.thirdweb.com/mcp?secretKey=<YOUR_THIRDWEB_SECRET_KEY>"
+    }
+  }
+}
+```
 
 ## Building at ETHGlobal Mumbai
 

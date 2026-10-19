@@ -19,9 +19,31 @@ Site: https://goldsky.com
 ## Before you write code with Goldsky
 
 1. Read Goldsky's docs written for AI assistants: https://goldsky.com/llms.txt
-2. Set up Goldsky's MCP server and use it to look things up while you code: https://docs.goldsky.com/mcp-server
+2. Connect Goldsky's MCP server (setup below) and use it to look things up while you code.
 3. Use the full docs for anything the AI docs don't cover: https://goldsky.com
 4. Check the latest version of its SDK or package before you install it, and follow the current API in those docs instead of what you remember.
+
+## Connect Goldsky's MCP server
+
+Docs only, no key. Setup from https://docs.goldsky.com/mcp-server
+
+Claude Code:
+
+```bash
+claude mcp add --transport http Goldsky https://docs.goldsky.com/mcp
+```
+
+Cursor (add to `.cursor/mcp.json`):
+
+```json
+{
+  "mcpServers": {
+    "Goldsky": {
+      "url": "https://docs.goldsky.com/mcp"
+    }
+  }
+}
+```
 
 ## Building at ETHGlobal Mumbai
 

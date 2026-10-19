@@ -19,9 +19,31 @@ Site: https://quicknode.com
 ## Before you write code with QuickNode
 
 1. Read QuickNode's docs written for AI assistants: https://www.quicknode.com/llms.txt
-2. Set up QuickNode's MCP server and use it to look things up while you code: https://www.quicknode.com/docs/build-with-ai/quicknode-mcp
+2. Connect QuickNode's MCP server (setup below) and use it to look things up while you code.
 3. Use the full docs for anything the AI docs don't cover: https://quicknode.com
 4. Check the latest version of its SDK or package before you install it, and follow the current API in those docs instead of what you remember.
+
+## Connect QuickNode's MCP server
+
+OAuth 2.1 on first connect. Setup from https://www.quicknode.com/docs/build-with-ai/quicknode-mcp
+
+Claude Code:
+
+```bash
+claude mcp add --transport http quicknode https://mcp.quicknode.com/mcp
+```
+
+Cursor (add to `.cursor/mcp.json`):
+
+```json
+{
+  "mcpServers": {
+    "quicknode": {
+      "url": "https://mcp.quicknode.com/mcp"
+    }
+  }
+}
+```
 
 ## Building at ETHGlobal Mumbai
 

@@ -19,9 +19,39 @@ Site: https://pinata.cloud
 ## Before you write code with Pinata
 
 1. Read Pinata's docs written for AI assistants: https://docs.pinata.cloud/llms.txt
-2. Set up Pinata's MCP server and use it to look things up while you code: https://docs.pinata.cloud/tools/mcp/overview
+2. Connect Pinata's MCP server (setup below) and use it to look things up while you code.
 3. Use the full docs for anything the AI docs don't cover: https://pinata.cloud
 4. Check the latest version of its SDK or package before you install it, and follow the current API in those docs instead of what you remember.
+
+## Connect Pinata's MCP server
+
+Needs a Pinata API JWT and your gateway domain. Setup from https://docs.pinata.cloud/tools/mcp/overview
+
+Claude Code:
+
+```bash
+claude mcp add pinata -e PINATA_JWT=<YOUR_PINATA_JWT> -e GATEWAY_URL=<YOUR_GATEWAY>.mypinata.cloud -- npx pinata-mcp /path/to/allowed/directory
+```
+
+Cursor (add to `.cursor/mcp.json`):
+
+```json
+{
+  "mcpServers": {
+    "pinata": {
+      "command": "npx",
+      "args": [
+        "pinata-mcp",
+        "/path/to/allowed/directory"
+      ],
+      "env": {
+        "PINATA_JWT": "<YOUR_PINATA_JWT>",
+        "GATEWAY_URL": "<YOUR_GATEWAY>.mypinata.cloud"
+      }
+    }
+  }
+}
+```
 
 ## Building at ETHGlobal Mumbai
 

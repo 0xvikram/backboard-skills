@@ -19,9 +19,35 @@ Site: https://xmtp.org
 ## Before you write code with XMTP
 
 1. Read XMTP's docs written for AI assistants: https://docs.xmtp.org/llms.txt
-2. Set up XMTP's MCP server and use it to look things up while you code: https://github.com/xmtp/xmtp-docs-mcp
+2. Connect XMTP's MCP server (setup below) and use it to look things up while you code.
 3. Use the full docs for anything the AI docs don't cover: https://xmtp.org
 4. Check the latest version of its SDK or package before you install it, and follow the current API in those docs instead of what you remember.
+
+## Connect XMTP's MCP server
+
+No key; XMTP marks it internal beta, and it installs from GitHub rather than npm. Setup from https://github.com/xmtp/xmtp-docs-mcp
+
+Claude Code:
+
+```bash
+claude mcp add --transport stdio xmtp-docs -- npx -y github:xmtp/xmtp-docs-mcp
+```
+
+Cursor (add to `.cursor/mcp.json`):
+
+```json
+{
+  "mcpServers": {
+    "xmtp-docs": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "github:xmtp/xmtp-docs-mcp"
+      ]
+    }
+  }
+}
+```
 
 ## Building at ETHGlobal Mumbai
 

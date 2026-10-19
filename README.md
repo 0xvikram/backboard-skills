@@ -69,13 +69,26 @@ Whatever the kind, the tool's official docs win over the skill when the two disa
 ## Catalog
 
 <!-- catalog:start -->
-42 tool skills and 1 guide skill. **Tested** skills were written by hand and their examples run before release; **Generated** skills point your assistant at the tool's own docs, AI docs and MCP server.
+42 tool skills and 14 guide skills. **Tested** skills were written by hand and their examples run before release; **Generated** skills point your assistant at the tool's own docs, AI docs and MCP server.
 
 **Guides**
 
 | Skill | What it's for |
 | --- | --- |
 | [`backboard`](skills/backboard) | Use when hacking at ETHGlobal Mumbai (5 to 7 Nov 2026) and choosing SDKs, APIs or dev tools, or when the user says what they are building… |
+| [`sponsor-chains`](skills/sponsor-chains) | Use when connecting to or deploying on World Chain, Unichain, Hedera, Arc, 0G or Whitechain (mainnet or testnet), for example at ETHGlobal… |
+| [`track-0g`](skills/track-0g) | Use when building for the 0G prize track at ETHGlobal Mumbai (An L1 for decentralised AI apps). Lists the tools on Backboard that fit the… |
+| [`track-1inch`](skills/track-1inch) | Use when building for the 1inch prize track at ETHGlobal Mumbai (Swap APIs and DeFi protocols across EVM chains and Solana). Lists the… |
+| [`track-arc`](skills/track-arc) | Use when building for the Arc prize track at ETHGlobal Mumbai (Circle's L1 for payments, FX and lending). Lists the tools on Backboard… |
+| [`track-arkiv`](skills/track-arkiv) | Use when building for the Arkiv prize track at ETHGlobal Mumbai (Web3 databases with queryable records). Lists the tools on Backboard that… |
+| [`track-chainlink`](skills/track-chainlink) | Use when building for the Chainlink prize track at ETHGlobal Mumbai (Oracles and cross-chain infrastructure). Lists the tools on Backboard… |
+| [`track-definitive`](skills/track-definitive) | Use when building for the Definitive prize track at ETHGlobal Mumbai (Flash API: advanced trade orders for social and agent apps). Lists… |
+| [`track-ef`](skills/track-ef) | Use when building for the Ethereum Foundation prize track at ETHGlobal Mumbai (Prize details not published yet). Lists the tools on… |
+| [`track-ens`](skills/track-ens) | Use when building for the ENS prize track at ETHGlobal Mumbai (Names for wallets, apps and anything onchain). Lists the tools on Backboard… |
+| [`track-hedera`](skills/track-hedera) | Use when building for the Hedera prize track at ETHGlobal Mumbai (An EVM-compatible network with SDKs in many languages). Lists the tools… |
+| [`track-uniswap`](skills/track-uniswap) | Use when building for the Uniswap Foundation prize track at ETHGlobal Mumbai (Uniswap v4, hooks and Unichain). Lists the tools on… |
+| [`track-whitechain`](skills/track-whitechain) | Use when building for the Whitechain prize track at ETHGlobal Mumbai (Prize details not published yet). Lists the tools on Backboard that… |
+| [`track-world`](skills/track-world) | Use when building for the World prize track at ETHGlobal Mumbai (Proof of personhood and apps for verified humans). Lists the tools on… |
 
 **Tools**
 

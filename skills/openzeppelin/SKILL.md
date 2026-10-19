@@ -19,9 +19,32 @@ Site: https://openzeppelin.com
 ## Before you write code with OpenZeppelin Contracts
 
 1. Read OpenZeppelin Contracts's docs written for AI assistants: https://docs.openzeppelin.com/llms.txt
-2. Set up OpenZeppelin Contracts's MCP server and use it to look things up while you code: https://mcp.openzeppelin.com
+2. Connect OpenZeppelin Contracts's MCP server (setup below) and use it to look things up while you code.
 3. Use the full docs for anything the AI docs don't cover: https://openzeppelin.com
 4. Check the latest version of its SDK or package before you install it, and follow the current API in those docs instead of what you remember.
+
+## Connect OpenZeppelin Contracts's MCP server
+
+No key; marked internal beta by XMTP and installed from GitHub, not npm. Setup from https://mcp.openzeppelin.com
+
+Claude Code:
+
+```bash
+claude mcp add --transport http OpenZeppelinSolidityContracts https://mcp.openzeppelin.com/contracts/solidity/mcp
+```
+
+Cursor (add to `.cursor/mcp.json`):
+
+```json
+{
+  "mcpServers": {
+    "OpenZeppelinSolidityContracts": {
+      "type": "streamable-http",
+      "url": "https://mcp.openzeppelin.com/contracts/solidity/mcp"
+    }
+  }
+}
+```
 
 ## Building at ETHGlobal Mumbai
 

@@ -19,9 +19,31 @@ Site: https://dynamic.xyz
 ## Before you write code with Dynamic
 
 1. Read Dynamic's docs written for AI assistants: https://www.dynamic.xyz/docs/llms.txt
-2. Set up Dynamic's MCP server and use it to look things up while you code: https://www.dynamic.xyz/docs/mcp
+2. Connect Dynamic's MCP server (setup below) and use it to look things up while you code.
 3. Use the full docs for anything the AI docs don't cover: https://dynamic.xyz
 4. Check the latest version of its SDK or package before you install it, and follow the current API in those docs instead of what you remember.
+
+## Connect Dynamic's MCP server
+
+Docs only, no key. Setup from https://www.dynamic.xyz/docs/mcp
+
+Claude Code:
+
+```bash
+claude mcp add --transport http dynamic-docs https://www.dynamic.xyz/docs/mcp
+```
+
+Cursor (add to `.cursor/mcp.json`):
+
+```json
+{
+  "mcpServers": {
+    "dynamic-docs": {
+      "url": "https://www.dynamic.xyz/docs/mcp"
+    }
+  }
+}
+```
 
 ## Building at ETHGlobal Mumbai
 
