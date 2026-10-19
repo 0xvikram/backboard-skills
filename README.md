@@ -115,7 +115,7 @@ Whatever the kind, the tool's official docs win over the skill when the two disa
 | [`scaffold-eth`](skills/scaffold-eth) | A starter kit with contracts, a front end and hot reload, ready to fork | Dev infra & RPC | Generated |  |
 | [`tenderly`](skills/tenderly) | Simulate and debug transactions, and test on virtual testnets | Dev infra & RPC | Generated |  |
 | [`eas`](skills/eas) | Open attestations for reputation, credentials and proofs | Identity & humans | Generated |  |
-| [`namespace-53d629`](skills/namespace-53d629) | Build ENS-powered apps faster with Namespace SDKs, UI components, resolvers, and subname… | Identity & humans | Generated |  |
+| [`namespace-53d629`](skills/namespace-53d629) | Namespace issues ENS subnames (alice.yourapp.eth): gasless offchain subnames through an… | Identity & humans | **Tested** 2026-10-19 | Yes |
 | [`reclaim`](skills/reclaim) | Let users prove data from any website without sharing their login | Identity & humans | Generated |  |
 | [`sign`](skills/sign) | Issue and verify attestations across chains | Identity & humans | Generated |  |
 | [`daimo`](skills/daimo) | Let users pay from any chain or coin in one step | Payments & stablecoins | Generated |  |
