@@ -2,7 +2,7 @@
 
 All notable changes to this repository. Dates are in UTC.
 
-## Unreleased
+## 0.4.0 — 2026-10-19
 
 ### Added
 - Tested skills: Goldsky, QuickNode, Envio, Reown AppKit, Scaffold-ETH 2.
