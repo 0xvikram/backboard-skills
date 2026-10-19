@@ -133,7 +133,7 @@ Whatever the kind, the tool's official docs win over the skill when the two disa
 | [`privy`](skills/privy) | Privy gives your app email/social/wallet login plus embedded wallets for every user, in… | Wallets & onboarding | **Tested** 2026-10-19 | Yes |
 | [`reown`](skills/reown) | Add wallet connection to your app in the first hour | Wallets & onboarding | Generated |  |
 | [`safe`](skills/safe) | Smart accounts with shared control and spending limits, good for agents and treasuries | Wallets & onboarding | Generated |  |
-| [`thirdweb`](skills/thirdweb) | SDKs and contract tooling that skip a day of boilerplate | Wallets & onboarding | Generated | Yes |
+| [`thirdweb`](skills/thirdweb) | thirdweb TypeScript SDK v5 (`thirdweb` npm package): wallet connect UI, in-app wallets… | Wallets & onboarding | **Tested** 2026-10-19 | Yes |
 | [`web3auth`](skills/web3auth) | Social login that creates a wallet for your users | Wallets & onboarding | Generated |  |
 | [`zerodev`](skills/zerodev) | Smart accounts with session keys and gas sponsorship | Wallets & onboarding | Generated |  |
 
