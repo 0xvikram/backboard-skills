@@ -17,6 +17,14 @@ const FORBIDDEN = [
   [/-----BEGIN [A-Z ]*PRIVATE KEY-----/, "contains a private key"],
 ];
 const MAX_BYTES = 100_000;
+// public 32-byte constants that look like keys but aren't: well-known event signature hashes (keccak256 of the event)
+const PUBLIC_HASHES = new Set([
+  "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef", // Transfer(address,address,uint256)
+  "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925", // Approval(address,address,uint256)
+  "0xc3d58168c5ae7397731d063d5bbf3d657854427343f4c083240f7aacaa2d0f62", // TransferSingle(address,address,address,uint256,uint256)
+  "0x4a39dc06d4c0dbc64b70af90fd698a233a518aa5d07e595d983b8c0526c8f7fb", // TransferBatch(address,address,address,uint256[],uint256[])
+]);
+const withoutPublic = (text) => text.replace(/0x[0-9a-fA-F]{64}/g, (h) => (PUBLIC_HASHES.has(h.toLowerCase()) ? "" : h));
 
 const errors = [];
 const fail = (where, msg) => errors.push(`${where}: ${msg}`);
@@ -51,7 +59,7 @@ for (const s of all) {
   for (const f of files(join(ROOT, where))) {
     const rel = relative(ROOT, f), text = readFileSync(f, "utf8");
     if (Buffer.byteLength(text) > MAX_BYTES) fail(rel, `is over ${MAX_BYTES / 1000} KB`);
-    for (const [re, why] of FORBIDDEN) if (re.test(text)) fail(rel, why);
+    for (const [re, why] of FORBIDDEN) if (re.test(withoutPublic(text))) fail(rel, why);
   }
 }
 
