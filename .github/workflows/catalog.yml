@@ -1,6 +1,7 @@
 name: Catalog
 
 # Skills published from the Backboard admin panel land straight on main, so the README catalog is rebuilt here.
+# main is protected, so this pushes with a deploy key (secret CATALOG_DEPLOY_KEY) that the branch ruleset allows.
 on:
   push:
     branches: [main]
@@ -8,7 +9,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: catalog
@@ -20,6 +21,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ssh-key: ${{ secrets.CATALOG_DEPLOY_KEY }}
       - uses: actions/setup-node@v4
         with:
           node-version: 22
