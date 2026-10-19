@@ -5,7 +5,7 @@ All notable changes to this repository. Dates are in UTC.
 ## Unreleased
 
 ### Added
-- Tested skills: Goldsky, QuickNode.
+- Tested skills: Goldsky, QuickNode, Envio.
 - The validator allows well-known public event hashes (ERC-20 and ERC-1155 Transfer/Approval), which look like private keys but aren't.
 
 ## 0.3.0 — 2026-10-19
