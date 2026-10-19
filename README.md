@@ -119,7 +119,7 @@ Whatever the kind, the tool's official docs win over the skill when the two disa
 | [`reclaim`](skills/reclaim) | Let users prove data from any website without sharing their login | Identity & humans | Generated |  |
 | [`sign`](skills/sign) | Issue and verify attestations across chains | Identity & humans | Generated |  |
 | [`daimo`](skills/daimo) | Let users pay from any chain or coin in one step | Payments & stablecoins | Generated |  |
-| [`onramp-money`](skills/onramp-money) | Build faster with our ready-to-integrate fiat-to-crypto APIs, crypto on/off-ramp… | Payments & stablecoins | Generated |  |
+| [`onramp-money`](skills/onramp-money) | Onramp.money is a fiat-to-crypto on-ramp and off-ramp (INR via UPI/IMPS and 30+ other… | Payments & stablecoins | **Tested** 2026-10-19 |  |
 | [`request`](skills/request) | Stablecoin invoices and payment requests | Payments & stablecoins | Generated |  |
 | [`superfluid`](skills/superfluid) | Streaming payments for subscriptions, salaries and rewards | Payments & stablecoins | Generated |  |
 | [`transak`](skills/transak) | A fiat on-ramp so users can pay with a card or bank transfer | Payments & stablecoins | Generated | Yes |
