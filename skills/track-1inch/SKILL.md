@@ -1,6 +1,6 @@
 ---
 name: track-1inch
-description: "Use when building for the 1inch prize track at ETHGlobal Mumbai (Swap APIs and DeFi protocols across EVM chains and Solana). Lists the tools on Backboard that fit the track, past winning projects for ideas, and where the official rules are."
+description: "Use when building for the 1inch prize track at ETHGlobal Mumbai (Build an Aqua app: DeFi positions on Aqua and SwapVM). Lists the tools on Backboard that fit the track, past winning projects for ideas, and where the official rules are."
 license: MIT
 metadata:
   category: "Prize track guide"
@@ -11,7 +11,7 @@ metadata:
 
 # 1inch track at ETHGlobal Mumbai
 
-1inch's track, in its own words: Swap APIs and DeFi protocols across EVM chains and Solana.
+1inch's track, in its own words: Build an Aqua app: DeFi positions on Aqua and SwapVM.
 
 **The rules, requirements and prizes are only on ETHGlobal's official page: https://ethglobal.com/events/mumbai/prizes.** Read the 1inch section there before planning, and check it again before you submit. This skill never restates them.
 

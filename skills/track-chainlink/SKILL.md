@@ -1,6 +1,6 @@
 ---
 name: track-chainlink
-description: "Use when building for the Chainlink prize track at ETHGlobal Mumbai (Oracles and cross-chain infrastructure). Lists the tools on Backboard that fit the track, past winning projects for ideas, and where the official rules are."
+description: "Use when building for the Chainlink prize track at ETHGlobal Mumbai (Workflows with CRE that connect chains to APIs, data and AI). Lists the tools on Backboard that fit the track, past winning projects for ideas, and where the official rules are."
 license: MIT
 metadata:
   category: "Prize track guide"
@@ -11,7 +11,7 @@ metadata:
 
 # Chainlink track at ETHGlobal Mumbai
 
-Chainlink's track, in its own words: Oracles and cross-chain infrastructure.
+Chainlink's track, in its own words: Workflows with CRE that connect chains to APIs, data and AI.
 
 **The rules, requirements and prizes are only on ETHGlobal's official page: https://ethglobal.com/events/mumbai/prizes.** Read the Chainlink section there before planning, and check it again before you submit. This skill never restates them.
 

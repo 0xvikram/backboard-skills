@@ -1,6 +1,6 @@
 ---
 name: track-hedera
-description: "Use when building for the Hedera prize track at ETHGlobal Mumbai (An EVM-compatible network with SDKs in many languages). Lists the tools on Backboard that fit the track, past winning projects for ideas, and where the official rules are."
+description: "Use when building for the Hedera prize track at ETHGlobal Mumbai (AI agents that pay: x402 payments on Hedera). Lists the tools on Backboard that fit the track, past winning projects for ideas, and where the official rules are."
 license: MIT
 metadata:
   category: "Prize track guide"
@@ -11,7 +11,7 @@ metadata:
 
 # Hedera track at ETHGlobal Mumbai
 
-Hedera's track, in its own words: An EVM-compatible network with SDKs in many languages.
+Hedera's track, in its own words: AI agents that pay: x402 payments on Hedera.
 
 **The rules, requirements and prizes are only on ETHGlobal's official page: https://ethglobal.com/events/mumbai/prizes.** Read the Hedera section there before planning, and check it again before you submit. This skill never restates them.
 
