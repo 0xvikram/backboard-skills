@@ -94,7 +94,7 @@ Whatever the kind, the tool's official docs win over the skill when the two disa
 
 | Skill | What it's for | Category | Type | MCP |
 | --- | --- | --- | --- | --- |
-| [`agentkit`](skills/agentkit) | Give your agent a wallet and onchain actions | AI & agents | Generated |  |
+| [`agentkit`](skills/agentkit) | Coinbase AgentKit gives an AI agent its own crypto wallet plus onchain tools (transfer,… | AI & agents | **Tested** 2026-10-19 | Yes |
 | [`fetch-ai`](skills/fetch-ai) | A Python framework for agents that find and talk to each other | AI & agents | Generated |  |
 | [`lit`](skills/lit) | Programmable keys and encryption for agents that hold secrets | AI & agents | Generated |  |
 | [`olas`](skills/olas) | A framework for building and running autonomous agents | AI & agents | Generated |  |
