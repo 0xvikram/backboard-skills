@@ -107,7 +107,7 @@ Whatever the kind, the tool's official docs win over the skill when the two disa
 | [`aave`](skills/aave) | Lending markets to build yield, borrowing and agent strategies on | DeFi & trading | Generated | Yes |
 | [`enso`](skills/enso) | One API to build multi-step DeFi actions | DeFi & trading | Generated |  |
 | [`morpho`](skills/morpho) | Lending vaults and markets to plug yield or borrowing into your app | DeFi & trading | Generated |  |
-| [`alchemy`](skills/alchemy) | RPC, data APIs and smart wallet tooling in one account | Dev infra & RPC | Generated | Yes |
+| [`alchemy`](skills/alchemy) | Alchemy is RPC and data-API infrastructure for EVM chains (World Chain, Unichain, Arc,… | Dev infra & RPC | **Tested** 2026-10-19 | Yes |
 | [`blockscout`](skills/blockscout) | An open-source explorer and APIs to verify contracts and show transactions | Dev infra & RPC | Generated |  |
 | [`hardhat`](skills/hardhat) | The development environment for compiling, testing and deploying contracts | Dev infra & RPC | Generated |  |
 | [`openzeppelin`](skills/openzeppelin) | Audited contract libraries to build your token, access control and upgrades on | Dev infra & RPC | Generated | Yes |
@@ -128,9 +128,9 @@ Whatever the kind, the tool's official docs win over the skill when the two disa
 | [`push`](skills/push) | Wallet notifications and chat for your users | Social & messaging | Generated |  |
 | [`xmtp`](skills/xmtp) | Wallet-to-wallet messaging for chat and agent apps | Social & messaging | Generated | Yes |
 | [`biconomy`](skills/biconomy) | Gasless, one-click transactions across chains | Wallets & onboarding | Generated |  |
-| [`dynamic`](skills/dynamic) | A drop-in login widget with wallets, email and social sign-in | Wallets & onboarding | Generated | Yes |
-| [`pimlico`](skills/pimlico) | Gasless transactions with permissionless.js, a bundler and a paymaster | Wallets & onboarding | Generated |  |
-| [`privy`](skills/privy) | Embedded wallets: users sign in with email, so judges can try your app in seconds | Wallets & onboarding | Generated |  |
+| [`dynamic`](skills/dynamic) | Dynamic (dynamic.xyz) wallet login for React: DynamicWidget sign-in with email, social… | Wallets & onboarding | **Tested** 2026-10-19 |  |
+| [`pimlico`](skills/pimlico) | Pimlico is ERC-4337 account abstraction infra (bundler + paymaster) used with… | Wallets & onboarding | **Tested** 2026-10-19 | Yes |
+| [`privy`](skills/privy) | Privy gives your app email/social/wallet login plus embedded wallets for every user, in… | Wallets & onboarding | **Tested** 2026-10-19 | Yes |
 | [`reown`](skills/reown) | Add wallet connection to your app in the first hour | Wallets & onboarding | Generated |  |
 | [`safe`](skills/safe) | Smart accounts with shared control and spending limits, good for agents and treasuries | Wallets & onboarding | Generated |  |
 | [`thirdweb`](skills/thirdweb) | SDKs and contract tooling that skip a day of boilerplate | Wallets & onboarding | Generated | Yes |
