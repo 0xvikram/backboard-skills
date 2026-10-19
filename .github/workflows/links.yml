@@ -1,0 +1,30 @@
+name: Links
+
+# Once a week, check every link in the skills still loads, and open an issue when some don't.
+on:
+  schedule:
+    - cron: "0 4 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  links:
+    name: Check links
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - id: check
+        run: node scripts/links.mjs > links.txt 2>&1 || echo "broken=1" >> "$GITHUB_OUTPUT"; cat links.txt
+      - name: Open an issue
+        if: steps.check.outputs.broken == '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          { echo "The weekly link check found links that no longer load:"; echo; echo '```'; cat links.txt; echo '```'; } > body.md
+          gh issue create --title "Broken links in skills ($(date -u +%Y-%m-%d))" --body-file body.md --label links || gh issue create --title "Broken links in skills ($(date -u +%Y-%m-%d))" --body-file body.md

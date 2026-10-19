@@ -1,0 +1,13 @@
+{
+  "name": "backboard-skills",
+  "private": true,
+  "description": "Open-source AI skills for the developer tools on Backboard",
+  "license": "MIT",
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "catalog": "node scripts/catalog.mjs",
+    "links": "node scripts/links.mjs"
+  }
+}

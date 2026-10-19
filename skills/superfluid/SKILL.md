@@ -1,6 +1,12 @@
 ---
 name: superfluid
 description: "Use when building with Superfluid (its team describes it as: 'Streaming payments for subscriptions, salaries and rewards'). Points you to Superfluid's own docs for AI assistants, and gives the facts for using it at ETHGlobal Mumbai."
+license: MIT
+metadata:
+  category: "Payments & stablecoins"
+  website: "https://superfluid.org"
+  source: "generated"
+  generated: "2026-10-19"
 ---
 <!-- backboard:generated -->
 

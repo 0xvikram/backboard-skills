@@ -1,6 +1,12 @@
 ---
 name: namespace-53d629
 description: "Use when building with Namespace (its team describes it as: 'Build ENS-powered apps faster with Namespace SDKs, UI components, resolvers, and subname infrastructure.'). Points you to Namespace's own docs for AI assistants, and gives the facts for using it at ETHGlobal Mumbai."
+license: MIT
+metadata:
+  category: "Identity & humans"
+  website: "https://docs.namespace.ninja/getting-started"
+  source: "generated"
+  generated: "2026-10-19"
 ---
 <!-- backboard:generated -->
 

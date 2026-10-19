@@ -1,6 +1,12 @@
 ---
 name: enso
 description: "Use when building with Enso (its team describes it as: 'One API to build multi-step DeFi actions'). Points you to Enso's own docs for AI assistants, and gives the facts for using it at ETHGlobal Mumbai."
+license: MIT
+metadata:
+  category: "DeFi & trading"
+  website: "https://enso.build"
+  source: "generated"
+  generated: "2026-10-19"
 ---
 <!-- backboard:generated -->
 

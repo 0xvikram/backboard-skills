@@ -1,6 +1,12 @@
 ---
 name: onramp-money
 description: "Use when building with Onramp.money (its team describes it as: 'Build faster with our ready-to-integrate fiat-to-crypto APIs, crypto on/off-ramp infrastructure and local payment rails'). Points you to Onramp.money's own docs for AI assistants, and gives the facts for using it at ETHGlobal Mumbai."
+license: MIT
+metadata:
+  category: "Payments & stablecoins"
+  website: "https://onramp.money/"
+  source: "generated"
+  generated: "2026-10-19"
 ---
 <!-- backboard:generated -->
 

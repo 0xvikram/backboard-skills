@@ -1,6 +1,12 @@
 ---
 name: olas
 description: "Use when building with Olas (its team describes it as: 'A framework for building and running autonomous agents'). Points you to Olas's own docs for AI assistants, and gives the facts for using it at ETHGlobal Mumbai."
+license: MIT
+metadata:
+  category: "AI & agents"
+  website: "https://olas.network"
+  source: "generated"
+  generated: "2026-10-19"
 ---
 <!-- backboard:generated -->
 

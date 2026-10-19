@@ -1,6 +1,12 @@
 ---
 name: thirdweb
 description: "Use when building with thirdweb (its team describes it as: 'SDKs and contract tooling that skip a day of boilerplate'). Points you to thirdweb's own docs for AI assistants and its MCP server, and gives the facts for using it at ETHGlobal Mumbai."
+license: MIT
+metadata:
+  category: "Wallets & onboarding"
+  website: "https://thirdweb.com"
+  source: "generated"
+  generated: "2026-10-19"
 ---
 <!-- backboard:generated -->
 

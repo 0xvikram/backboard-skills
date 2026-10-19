@@ -1,6 +1,12 @@
 ---
 name: scaffold-eth
 description: "Use when building with Scaffold-ETH 2 (its team describes it as: 'A starter kit with contracts, a front end and hot reload, ready to fork'). Points you to Scaffold-ETH 2's own docs for AI assistants, and gives the facts for using it at ETHGlobal Mumbai."
+license: MIT
+metadata:
+  category: "Dev infra & RPC"
+  website: "https://scaffoldeth.io"
+  source: "generated"
+  generated: "2026-10-19"
 ---
 <!-- backboard:generated -->
 

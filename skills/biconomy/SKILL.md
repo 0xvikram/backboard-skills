@@ -1,6 +1,12 @@
 ---
 name: biconomy
 description: "Use when building with Biconomy (its team describes it as: 'Gasless, one-click transactions across chains'). Points you to Biconomy's own docs for AI assistants, and gives the facts for using it at ETHGlobal Mumbai."
+license: MIT
+metadata:
+  category: "Wallets & onboarding"
+  website: "https://biconomy.io"
+  source: "generated"
+  generated: "2026-10-19"
 ---
 <!-- backboard:generated -->
 

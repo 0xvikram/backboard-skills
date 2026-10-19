@@ -1,6 +1,12 @@
 ---
 name: pimlico
 description: "Use when building with Pimlico (its team describes it as: 'Gasless transactions with permissionless.js, a bundler and a paymaster'). Points you to Pimlico's own docs for AI assistants, and gives the facts for using it at ETHGlobal Mumbai."
+license: MIT
+metadata:
+  category: "Wallets & onboarding"
+  website: "https://pimlico.io"
+  source: "generated"
+  generated: "2026-10-19"
 ---
 <!-- backboard:generated -->
 

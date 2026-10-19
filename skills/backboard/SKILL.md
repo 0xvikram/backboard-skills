@@ -1,6 +1,10 @@
 ---
 name: backboard
 description: "Use when hacking at ETHGlobal Mumbai (5 to 7 Nov 2026) and choosing SDKs, APIs or dev tools, or when the user says what they are building or which prize track they are going for. Reads the live Backboard list of tools, ranked by hacker upvotes, and the docs for AI of each tool you pick."
+license: MIT
+metadata:
+  website: "https://backboard.0xvikram.me"
+  source: "hand-written"
 ---
 
 # Backboard

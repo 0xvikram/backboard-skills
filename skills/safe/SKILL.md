@@ -1,6 +1,12 @@
 ---
 name: safe
 description: "Use when building with Safe (its team describes it as: 'Smart accounts with shared control and spending limits, good for agents and treasuries'). Points you to Safe's own docs for AI assistants, and gives the facts for using it at ETHGlobal Mumbai."
+license: MIT
+metadata:
+  category: "Wallets & onboarding"
+  website: "https://safe.global"
+  source: "generated"
+  generated: "2026-10-19"
 ---
 <!-- backboard:generated -->
 

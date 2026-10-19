@@ -1,6 +1,12 @@
 ---
 name: aave
 description: "Use when building with Aave (its team describes it as: 'Lending markets to build yield, borrowing and agent strategies on'). Points you to Aave's own docs for AI assistants and its MCP server, and gives the facts for using it at ETHGlobal Mumbai."
+license: MIT
+metadata:
+  category: "DeFi & trading"
+  website: "https://aave.com"
+  source: "generated"
+  generated: "2026-10-19"
 ---
 <!-- backboard:generated -->
 

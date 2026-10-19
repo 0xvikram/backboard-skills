@@ -1,6 +1,12 @@
 ---
 name: privy
 description: "Use when building with Privy (its team describes it as: 'Embedded wallets: users sign in with email, so judges can try your app in seconds'). Points you to Privy's own docs for AI assistants, and gives the facts for using it at ETHGlobal Mumbai."
+license: MIT
+metadata:
+  category: "Wallets & onboarding"
+  website: "https://privy.io"
+  source: "generated"
+  generated: "2026-10-19"
 ---
 <!-- backboard:generated -->
 

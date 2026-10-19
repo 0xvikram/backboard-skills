@@ -1,0 +1,25 @@
+name: I'm on a tool's team
+description: Take over your tool's skill, correct it, or ask for it to be removed.
+labels: ["team"]
+body:
+  - type: input
+    id: tool
+    attributes:
+      label: Tool
+    validations:
+      required: true
+  - type: dropdown
+    id: ask
+    attributes:
+      label: What would you like?
+      options:
+        - We'll send a pull request with our own skill
+        - Please correct something
+        - Please remove our skill
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: How we can confirm you're on the team (an official account, a docs page, an email domain), and anything else.

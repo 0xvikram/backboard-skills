@@ -1,6 +1,12 @@
 ---
 name: eas
 description: "Use when building with Ethereum Attestation Service (its team describes it as: 'Open attestations for reputation, credentials and proofs'). Points you to Ethereum Attestation Service's own docs for AI assistants, and gives the facts for using it at ETHGlobal Mumbai."
+license: MIT
+metadata:
+  category: "Identity & humans"
+  website: "https://attest.org"
+  source: "generated"
+  generated: "2026-10-19"
 ---
 <!-- backboard:generated -->
 

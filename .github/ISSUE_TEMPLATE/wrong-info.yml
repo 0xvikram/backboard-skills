@@ -1,0 +1,23 @@
+name: Wrong or outdated information
+description: A skill has a broken link, an old version or a fact that's wrong.
+labels: ["fix"]
+body:
+  - type: input
+    id: skill
+    attributes:
+      label: Skill
+      description: The folder name, for example `privy`.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's wrong
+      description: Quote the line, and say what it should be.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: A link to the official docs that shows the right answer.

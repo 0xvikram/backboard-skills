@@ -1,6 +1,12 @@
 ---
 name: hardhat
 description: "Use when building with Hardhat (its team describes it as: 'The development environment for compiling, testing and deploying contracts'). Points you to Hardhat's own docs for AI assistants, and gives the facts for using it at ETHGlobal Mumbai."
+license: MIT
+metadata:
+  category: "Dev infra & RPC"
+  website: "https://hardhat.org"
+  source: "generated"
+  generated: "2026-10-19"
 ---
 <!-- backboard:generated -->
 

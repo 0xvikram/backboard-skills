@@ -1,6 +1,12 @@
 ---
 name: openzeppelin
 description: "Use when building with OpenZeppelin Contracts (its team describes it as: 'Audited contract libraries to build your token, access control and upgrades on'). Points you to OpenZeppelin Contracts's own docs for AI assistants and its MCP server, and gives the facts for using it at ETHGlobal Mumbai."
+license: MIT
+metadata:
+  category: "Dev infra & RPC"
+  website: "https://openzeppelin.com"
+  source: "generated"
+  generated: "2026-10-19"
 ---
 <!-- backboard:generated -->
 

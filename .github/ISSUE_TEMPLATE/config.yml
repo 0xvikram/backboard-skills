@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a harmful or unsafe skill
+    url: https://github.com/0xvikram/backboard-skills/security/advisories/new
+    about: Privately report a skill that could hurt someone who installs it.
+  - name: List a tool on Backboard
+    url: https://backboard.0xvikram.me/?list=1
+    about: Tools get their skill once they're approved on the board.

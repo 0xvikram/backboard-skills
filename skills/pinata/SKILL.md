@@ -1,6 +1,12 @@
 ---
 name: pinata
 description: "Use when building with Pinata (its team describes it as: 'Upload files to IPFS with one API call'). Points you to Pinata's own docs for AI assistants and its MCP server, and gives the facts for using it at ETHGlobal Mumbai."
+license: MIT
+metadata:
+  category: "Data & storage"
+  website: "https://pinata.cloud"
+  source: "generated"
+  generated: "2026-10-19"
 ---
 <!-- backboard:generated -->
 

@@ -1,6 +1,12 @@
 ---
 name: transak
 description: "Use when building with Transak (its team describes it as: 'A fiat on-ramp so users can pay with a card or bank transfer'). Points you to Transak's own docs for AI assistants and its MCP server, and gives the facts for using it at ETHGlobal Mumbai."
+license: MIT
+metadata:
+  category: "Payments & stablecoins"
+  website: "https://transak.com"
+  source: "generated"
+  generated: "2026-10-19"
 ---
 <!-- backboard:generated -->
 

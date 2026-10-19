@@ -1,0 +1,33 @@
+name: Catalog
+
+# Skills published from the Backboard admin panel land straight on main, so the README catalog is rebuilt here.
+on:
+  push:
+    branches: [main]
+    paths: ["skills/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: catalog
+  cancel-in-progress: false
+
+jobs:
+  catalog:
+    name: Rebuild the README catalog
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/catalog.mjs
+      - name: Commit if it changed
+        run: |
+          if git diff --quiet README.md; then echo "Catalog already current"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update the skill catalog" README.md
+          git push

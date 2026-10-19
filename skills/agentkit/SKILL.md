@@ -1,6 +1,12 @@
 ---
 name: agentkit
 description: "Use when building with Coinbase AgentKit (its team describes it as: 'Give your agent a wallet and onchain actions'). Points you to Coinbase AgentKit's own docs for AI assistants, and gives the facts for using it at ETHGlobal Mumbai."
+license: MIT
+metadata:
+  category: "AI & agents"
+  website: "https://docs.cdp.coinbase.com"
+  source: "generated"
+  generated: "2026-10-19"
 ---
 <!-- backboard:generated -->
 
